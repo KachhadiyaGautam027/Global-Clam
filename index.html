@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Glam</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font to match the uploaded design */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* Custom styles for positioning text over the factory image */
+        .factory-image-container {
+            position: relative;
+        }
+
+        .full-services-text {
+            position: absolute;
+            top: 20%; /* Adjust the positioning */
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            color: white;
+            font-size: 2rem;
+            font-weight: 800;
+            line-height: 1.2;
+            letter-spacing: 0.05em;
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-b from-black via-purple-900 to-purple-800 text-white">
+
+    <!-- Navbar -->
+    <nav class="flex justify-between items-center py-6 px-16">
+        <div>
+            <img src="images/logo.png" alt="Global Glam Logo" class="h-10">
+        </div>
+        <ul class="flex gap-8 text-sm font-semibold">
+            <li><a href="#" class="text-pink-400 border-b-2 border-pink-400">Home</a></li>
+            <li><a href="#" class="hover:text-pink-400">About Us</a></li>
+            <li><a href="#" class="hover:text-pink-400">Products</a></li>
+            <li><a href="#" class="hover:text-pink-400">Gallery</a></li>
+            <li><a href="#" class="hover:text-pink-400">Blog</a></li>
+            <li><a href="#" class="hover:text-pink-400">Forum</a></li>
+        </ul>
+        <a href="#"
+            class="relative bg-pink-600 text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-pink-700 flex items-center gap-2"
+            style="background: url('images/Contact-Border.png') no-repeat center; background-size: contain; padding: 1rem 3rem;">
+            <span class="z-10">Contact Now >></span>
+        </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative flex items-center justify-center px-16 py-20">
+        <!-- Factory Image with Overlapping Text -->
+        <div class="relative w-full max-w-md factory-image-container">
+            <!-- Adjusted Factory Image Height and Centering -->
+            <div class="w-full h-[700px] rounded-full overflow-hidden shadow-2xl mx-auto">
+                <img src="images/Factory.png" alt="Factory Image" class="w-full h-full object-cover">
+            </div>
+
+            <!-- Text Overlapping Factory Image -->
+            <h1 class="full-services-text">
+                FULL <br>SERVICES <br>TEXTILE <br>SOLUTIONS
+            </h1>
+
+            <!-- Contact Information Bubble -->
+            <div
+                class="absolute bg-pink-600 text-white rounded-full text-center w-28 h-28 flex items-center justify-center text-sm shadow-lg -right-16 bottom-3">
+                Contact <br> Information
+            </div>
+        </div>
+
+        <!-- Left Content (Welcome Section) -->
+        <div class="absolute left-12 text-white max-w-md space-y-6">
+            <h2 class="text-4xl md:text-6xl font-extrabold leading-tight tracking-wide mb-6">
+                Welcome to Global Glam!
+            </h2>
+            <p class="text-sm text-gray-300 mb-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <div class="space-y-4">
+                <a href="#"
+                    class="flex items-center gap-3 text-white hover:underline font-semibold">
+                    <span>Professional experience</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                </a>
+                <a href="#"
+                    class="flex items-center gap-3 text-white hover:underline font-semibold">
+                    <span>No grateful customers</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- Statistics Section (Moved Near the Button) -->
+        <div class="absolute bottom-25 right-12 text-center space-y-6">
+            <div class="text-center bg-purple-900 p-6 rounded-lg shadow-lg">
+                <h2 class="text-4xl font-extrabold text-pink-400">10k</h2>
+                <p class="text-sm text-gray-300 mt-2">Projects completed</p>
+            </div>
+            <div class="text-center bg-purple-900 p-6 rounded-lg shadow-lg">
+                <h2 class="text-4xl font-extrabold text-pink-400">120</h2>
+                <p class="text-sm text-gray-300 mt-2">Worked Employee</p>
+            </div>
+            <div class="text-center bg-purple-900 p-6 rounded-lg shadow-lg">
+                <h2 class="text-4xl font-extrabold text-pink-400">25+</h2>
+                <p class="text-sm text-gray-300 mt-2">Years of Experience</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

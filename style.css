@@ -1,0 +1,29 @@
+
+:root{
+    --dark-blue: #09021B;
+    --dark-pink: #;
+    --white: #fff;
+}
+
+.nav-item {
+    position: relative;
+  }
+
+  .nav-item::before {
+    content: '';
+    position: absolute;
+    bottom: -2px; /* Position the underline slightly below the text */
+    left: 0;
+    width: 0;
+    height: 2px; /* Thickness of the underline */
+    background-color: #f472b6; /* Pink color for the underline */
+    transition: width 0.3s ease-in-out; /* Smooth transition */
+  }
+
+  .nav-item:hover::before {
+    width: 100%; /* Full width on hover */
+  }
+
+  .contact-info{
+    left: 40px;
+  }
