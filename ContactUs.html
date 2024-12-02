@@ -2,148 +2,142 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'dark-purple': '#0F0B1A',
-                        'light-purple': '#2D1B3D',
-                        'pink': '#FF1493',
-                    },
-                }
-            }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'dark-purple': '#0F0B1A',
+            'light-purple': '#2D1B3D',
+            'pink': '#FF1493',
+          },
         }
-    </script>
+      }
+    }
+  </script>
 </head>
 
 <body class="bg-gradient-to-b from-dark-purple to-light-purple font-poppins text-white min-h-screen">
-    <!-- Header -->
-    <header class="container mx-auto px-4 py-6 flex justify-between">
+  <!-- Header -->
+  <header class="container mx-auto px-4 py-6 flex justify-between">
+    <!-- Logo -->
+    <div>
+      <img src="images/logo.png" alt="Global Glam Logo" class="w-auto h-10">
+    </div>
+
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:flex space-x-8">
+      <a href="./index.html" class="hover:text-pink">Home</a>
+      <a href="./AboutUs.html" class="hover:text-pink">About Us</a>
+      <a href="./Products.html" class="hover:text-pink">Products</a>
+      <a href="./Gallery.html" class="hover:text-pink">Gallery</a>
+      <a href="./Blog.html" class="hover:text-pink">Blog</a>
+      <a href="./Forum.html" class="hover:text-pink">Forum</a>
+    </nav>
+
+    <!-- Contact Button -->
+    <a href="./ContactUs.html"
+      class="hidden md:flex relative bg-pink-600 text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-pink-700 flex items-center gap-2"
+      style="background: url('images/Contact-Border.png') no-repeat center; background-size: contain;">
+      <span class="z-10">Contact Now &rarr;</span>
+    </a>
+
+    <!-- Mobile Menu Toggle -->
+    <button id="menuToggle" class="md:hidden flex absolute right-10 top-8 text-pink">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu"
+    class="hidden fixed top-0 left-0 w-full h-full bg-gradient-to-b from-indigo-950 to-purple-900 text-white z-50">
+    <div class="relative w-full">
+      <!-- Logo and Close Button Row -->
+      <div class="px-4 py-4 border-b border-gray-700">
         <!-- Logo -->
-        <div>
-            <img src="images/logo.png" alt="Global Glam Logo" class="w-auto h-10">
-        </div>
+        <img src="images/logo.png" alt="Global Glam Logo" class="h-10 w-auto">
 
-        <!-- Desktop Navigation -->
-        <nav class="hidden md:flex space-x-8">
-            <a href="./index.html" class="hover:text-pink">Home</a>
-            <a href="./AboutUs.html" class="hover:text-pink">About Us</a>
-            <a href="./Products.html" class="hover:text-pink">Products</a>
-            <a href="./Gallery.html" class="hover:text-pink">Gallery</a>
-            <a href="./Blog.html" class="hover:text-pink">Blog</a>
-            <a href="./Forum.html" class="hover:text-pink">Forum</a>
-        </nav>
-
-        <!-- Contact Button -->
-        <a href="./ContactUs.html"
-            class="hidden md:flex relative bg-pink-600 text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-pink-700 flex items-center gap-2"
-            style="background: url('images/Contact-Border.png') no-repeat center; background-size: contain;">
-            <span class="z-10">Contact Now &rarr;</span>
-        </a>
-
-        <!-- Mobile Menu Toggle -->
-        <button id="menuToggle" class="md:hidden flex absolute right-10 top-8 text-pink">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
+        <!-- Close Button -->
+        <button id="menuClose" class="text-pink hover:text-pink-600 absolute right-10 top-6">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
         </button>
-    </header>
+      </div>
 
-    <!-- Mobile Menu -->
-    <div id="mobileMenu"
-        class="hidden fixed top-0 left-0 w-full h-full bg-gradient-to-b from-indigo-950 to-purple-900 text-white z-50">
-        <div class="relative w-full">
-            <!-- Logo and Close Button Row -->
-            <div class="px-4 py-4 border-b border-gray-700">
-                <!-- Logo -->
-                <img src="images/logo.png" alt="Global Glam Logo" class="h-10 w-auto">
-
-                <!-- Close Button -->
-                <button id="menuClose" class="text-pink hover:text-pink-600 absolute right-10 top-6">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                </button>
-            </div>
-
-            <!-- Header Underline -->
-            <div class="w-full">
-                <img src="images/Header line.png" alt="Header Underline" class="w-full">
-            </div>
-        </div>
-
-        <!-- Navigation Links -->
-        <div class="container mx-auto px-4 py-6">
-            <nav class="mt-10 space-y-6 text-center">
-                <a href="./index.html" class="block text-pink font-semibold text-lg hover:underline">Home</a>
-                <a href="./AboutUs.html"
-                    class="block text-white font-medium text-lg hover:text-pink hover:underline">About
-                    Us</a>
-                <a href="./Products.html"
-                    class="block text-white font-medium text-lg hover:text-pink hover:underline">Products</a>
-                <a href="./Gallery.html"
-                    class="block text-white font-medium text-lg hover:text-pink hover:underline">Gallery</a>
-                <a href="./Blog.html"
-                    class="block text-white font-medium text-lg hover:text-pink hover:underline">Blog</a>
-                <a href="./Forum.html"
-                    class="block text-white font-medium text-lg hover:text-pink hover:underline">Forum</a>
-            </nav>
-        </div>
+      <!-- Header Underline -->
+      <div class="w-full">
+        <img src="images/Header line.png" alt="Header Underline" class="w-full">
+      </div>
     </div>
 
-    <!-- Full-Width Header Line -->
-    <div class="w-full">
-        <img src="images/Header line.png" alt="Line" class="w-full">
+    <!-- Navigation Links -->
+    <div class="container mx-auto px-4 py-6">
+      <nav class="mt-10 space-y-6 text-center">
+        <a href="./index.html" class="block text-pink font-semibold text-lg hover:underline">Home</a>
+        <a href="./AboutUs.html" class="block text-white font-medium text-lg hover:text-pink hover:underline">About
+          Us</a>
+        <a href="./Products.html"
+          class="block text-white font-medium text-lg hover:text-pink hover:underline">Products</a>
+        <a href="./Gallery.html"
+          class="block text-white font-medium text-lg hover:text-pink hover:underline">Gallery</a>
+        <a href="./Blog.html" class="block text-white font-medium text-lg hover:text-pink hover:underline">Blog</a>
+        <a href="./Forum.html" class="block text-white font-medium text-lg hover:text-pink hover:underline">Forum</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Full-Width Header Line -->
+  <div class="w-full">
+    <img src="images/Header line.png" alt="Line" class="w-full">
+  </div>
+
+  <!-- Banner Section -->
+  <section class="relative w-full h-[700px] flex flex-col items-center justify-center bg-cover bg-center"
+    style="background: linear-gradient(16.25deg, rgba(194, 37, 138, 0.4) -5%, rgba(10, 2, 28, 0.2) 40%), #0a021c;">
+    <!-- Background Overlay -->
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+
+    <!-- Breadcrumb Navigation -->
+    <div class="relative z-10 flex items-center justify-center gap-6">
+      <!-- Left Vector -->
+      <img src="images/Left-Vector.png" alt="Left Vector" class="w-16 h-auto md:w-20">
+
+      <!-- Breadcrumb Text -->
+      <nav class="text-base text-gray-300 flex items-center">
+        <a href="./index.html" class="hover:underline">Home</a>
+        <span class="text-gray-400 mx-2">/</span>
+        <span class="text-pink">Contact Us</span>
+      </nav>
+
+      <!-- Right Vector -->
+      <img src="images/Right-Vector.png" alt="Right Vector" class="w-16 h-auto md:w-20">
+    </div>
+  </section>
+
+
+  <!-- Main Container -->
+  <div class="flex flex-col items-center py-16" style="background-color: rgba(8, 6, 23, 1);">
+    <!-- Set background color -->
+
+    <!-- Centered Image -->
+    <div class="w-full max-w-4xl rounded-md" style="background-color: rgba(8, 6, 23, 1);">
+      <!-- Match background color -->
+      <img src="images/Conatct-Us.png" alt="Gallery Section" class="w-full h-auto object-cover rounded-md">
     </div>
 
-    <!-- Banner Section -->
-    <section class="relative w-full h-[700px] flex flex-col items-center justify-center bg-cover bg-center"
-        style="background: linear-gradient(16.25deg, rgba(194, 37, 138, 0.4) -5%, rgba(10, 2, 28, 0.2) 40%), #0a021c;">
-        <!-- Background Overlay -->
-        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-
-        <!-- Breadcrumb Navigation -->
-        <div class="relative z-10 flex items-center justify-center gap-6">
-            <!-- Left Vector -->
-            <img src="images/Left-Vector.png" alt="Left Vector" class="w-16 h-auto md:w-20">
-
-            <!-- Breadcrumb Text -->
-            <nav class="text-base text-gray-300 flex items-center">
-                <a href="./index.html" class="hover:underline">Home</a>
-                <span class="text-gray-400 mx-2">/</span>
-                <span class="text-pink">Contact Us</span>
-            </nav>
-
-            <!-- Right Vector -->
-            <img src="images/Right-Vector.png" alt="Right Vector" class="w-16 h-auto md:w-20">
-        </div>
-    </section>
+  </div>
 
 
-    <!-- Main Container -->
-    <div class="flex flex-col items-center py-16" style="background-color: rgba(8, 6, 23, 1);">
-        <!-- Set background color -->
-
-        <!-- Centered Image -->
-        <div class="w-full max-w-4xl rounded-md" style="background-color: rgba(8, 6, 23, 1);">
-            <!-- Match background color -->
-            <img src="images/Conatct-Us.png" alt="Gallery Section" class="w-full h-auto object-cover rounded-md">
-        </div>
-
-    </div>
-
-
-    <!-- Footer Section -->
+  <!-- Footer Section -->
   <div>
     <img src="./images/footermb.png" alt="" class="visible md:hidden">
   </div>
@@ -250,30 +244,35 @@
       </div>
 
       <!-- Bottom Footer -->
-      <div class="w-auto border-t border-gray-700 text-gray-400">
-        <a href="#" class="hover:text-brand-pink transition-colors text-xs">© 2023 by Global Glam|</a>
-        <a href="#" class="hover:text-brand-pink transition-colors text-xs">FAQ|</a>
-        <a href="#" class="hover:text-brand-pink transition-colors text-xs">Shipping and Returns|</a>
-        <a href="#" class="hover:text-brand-pink transition-colors text-xs">Terms and Condition</a>
+      <div class="w-auto border-t border-gray-700 text-gray-400 flex justify-between items-center p-2">
+        <div class="text-xs">
+          <a href="#" class="hover:text-brand-pink transition-colors">© 2023 by Global Glam</a>
+        </div>
+        <div class="flex gap-2">
+          <a href="#" class="hover:text-brand-pink transition-colors text-xs">FAQ</a>
+          <a href="#" class="hover:text-brand-pink transition-colors text-xs">Shipping and Returns</a>
+          <a href="#" class="hover:text-brand-pink transition-colors text-xs">Terms and Conditions</a>
+        </div>
       </div>
+      
     </div>
   </footer>
 
 
-    <!-- Scripts for Mobile Menu -->
-    <script>
-        const menuToggle = document.getElementById('menuToggle');
-        const mobileMenu = document.getElementById('mobileMenu');
-        const menuClose = document.getElementById('menuClose');
+  <!-- Scripts for Mobile Menu -->
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuClose = document.getElementById('menuClose');
 
-        menuToggle.addEventListener('click', () => {
-            mobileMenu.classList.remove('hidden');
-        });
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.remove('hidden');
+    });
 
-        menuClose.addEventListener('click', () => {
-            mobileMenu.classList.add('hidden');
-        });
-    </script>
+    menuClose.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+    });
+  </script>
 
 </body>
 
