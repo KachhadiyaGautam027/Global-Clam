@@ -107,25 +107,25 @@
     </div>
 
     <!-- Banner Section -->
-    <section class="relative w-full h-[700px] flex flex-col items-center justify-center bg-cover bg-center"
+    <section class="relative w-full h-[700px] md:h-screen flex flex-col items-center justify-center bg-cover bg-center"
         style="background: linear-gradient(16.25deg, rgba(194, 37, 138, 0.4) -5%, rgba(10, 2, 28, 0.2) 40%), #0a021c;">
         <!-- Background Overlay -->
         <div class="absolute inset-0 bg-black bg-opacity-50"></div>
 
         <!-- Breadcrumb Navigation -->
-        <div class="relative z-10 flex items-center justify-center gap-6">
+        <div class="relative z-10 flex items-center justify-center">
             <!-- Left Vector -->
-            <img src="images/Left-Vector.png" alt="Left Vector" class="w-16 h-auto md:w-20">
+            <img src="images/Left-Vector.png" alt="Left Vector" class="hidden sm:block w-12 sm:w-16 lg:w-auto h-auto">
 
             <!-- Breadcrumb Text -->
-            <nav class="text-base text-gray-300 flex items-center">
-                <a href="./index.html" class="hover:underline">Home</a> <!-- Updated Link to Home -->
+            <nav class="text-lg sm:text-xl font-semibold text-white flex items-center gap-2">
+                <a href="./index.html" class="hover:underline text-gray-300">Home</a>
                 <span class="text-gray-400 mx-2">/</span>
                 <span class="text-pink">About Us</span>
             </nav>
 
             <!-- Right Vector -->
-            <img src="images/Right-Vector.png" alt="Right Vector" class="w-16 h-auto md:w-20">
+            <img src="images/Right-Vector.png" alt="Right Vector" class="hidden sm:block w-12 sm:w-16 lg:w-auto h-auto">
         </div>
     </section>
 
