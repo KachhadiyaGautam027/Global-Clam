@@ -107,25 +107,31 @@
     </div>
 
     <!-- Banner Section -->
-    <section class="relative w-full h-[700px] md:h-screen flex flex-col items-center justify-center bg-cover bg-center"
+    <section class="relative w-full h-[400px] md:h-[600px] flex flex-col items-center justify-center bg-cover bg-center"
         style="background: linear-gradient(16.25deg, rgba(194, 37, 138, 0.4) -5%, rgba(10, 2, 28, 0.2) 40%), #0a021c;">
         <!-- Background Overlay -->
         <div class="absolute inset-0 bg-black bg-opacity-50"></div>
 
         <!-- Breadcrumb Navigation -->
-        <div class="relative z-10 flex items-center justify-center">
+        <div class="relative z-10 flex items-center justify-center gap-3 sm:gap-6">
             <!-- Left Vector -->
-            <img src="images/Left-Vector.png" alt="Left Vector" class="hidden sm:block w-12 sm:w-16 lg:w-auto h-auto">
+            <img src="images/Left-Vector.png" alt="Left Vector" class="hidden md:flex w-12 sm:w-16 lg:w-auto h-auto">
 
             <!-- Breadcrumb Text -->
-            <nav class="text-lg sm:text-xl font-semibold text-white flex items-center gap-2">
-                <a href="./index.html" class="hover:underline text-gray-300">Home</a>
-                <span class="text-gray-400 mx-2">/</span>
-                <span class="text-pink">About Us</span>
+            <nav class="flex text-lg sm:text-xl font-semibold text-white flex items-center gap-2">
+                <div>
+                    <img src="images/Left-Vector.png" alt="Left Vector"
+                        class="absolute md:hidden left-[-40%] top-[-240%] w-28 lg:w-auto h-auto ">
+                    <a href="./index.html" class="hover:underline md:text-gray-300 text-md md:text-xl ">Home</a>
+                    <span class="text-sm md:text-xl md:text-gray-400 mx-2">/</span>
+                    <span class="text-pink text-md md:text-xl">About Us</span>
+                    <img src="images/Right-Vector.png" alt="Right Vector"
+                        class="absolute md:hidden right-[-40%] top-[-240%] w-28 lg:w-auto h-auto">
+                </div>
             </nav>
 
             <!-- Right Vector -->
-            <img src="images/Right-Vector.png" alt="Right Vector" class="hidden sm:block w-12 sm:w-16 lg:w-auto h-auto">
+            <img src="images/Right-Vector.png" alt="Right Vector" class="hidden md:flex w-12 lg:w-auto h-auto">
         </div>
     </section>
 
@@ -170,55 +176,61 @@
 
             <!-- Content Section -->
             <div class="text-left text-gray-300">
-                <h1 class="text-4xl font-bold text-white mb-4 relative py-4">
+                <h1 class="text-4xl font-Saira text-white mb-4 relative py-2">
                     About Fablio
-                    <div class="absolute bottom-0 left-0 w-full h-[4px] bg-pink-500"></div>
-                    <!-- Pink line under the heading -->
                 </h1>
-                <p class="text-2xl font-jost text-pink mb-6">The Best Solution for all industrial & Factory<br />
+
+                <!-- Decorative Line -->
+                <img src="images/Line 3.png" alt="Decorative Line"
+                    class="w-32 sm:w-40 h-auto transition-transform duration-300 hover:scale-110">
+
+                <p class="text-2xl font-jost text-pink mb-6 mt-4">The Best Solution for all industrial & Factory<br />
                     Businesses</p>
-                <p class="mb-4 text-lg py-2">
+                <p class="mb-12 text-lg py-2">
                     At Global Glam, we believe in sustainable and ethical manufacturing practices. We work closely
                     with our suppliers to ensure that we source only the finest quality materials. Our state-of-the-art
                     production facility is equipped with the latest technology and machinery, enabling us to offer the
                     best solutions to our clients.
                 </p>
 
-                <!-- List Section with Right Nishani Image -->
-                <ul class="list-none mb-6 space-y-4">
-                    <li class="flex items-center text-gray-400">
-                        <img src="images/Right-nishani.png" alt="Right Nishani" class="w-5 h-5 mr-3">
-                        Experienced Attorneys Professional.
-                    </li>
-                    <li class="flex items-center text-gray-400">
-                        <img src="images/Right-nishani.png" alt="Right Nishani" class="w-5 h-5 mr-3">
-                        Committed to Helping our Clients.
-                    </li>
-                    <li class="flex items-center text-gray-400">
-                        <img src="images/Right-nishani.png" alt="Right Nishani" class="w-5 h-5 mr-3">
-                        Experienced Attorneys Approach.
-                    </li>
-                    <li class="flex items-center text-gray-400">
-                        <img src="images/Right-nishani.png" alt="Right Nishani" class="w-5 h-5 mr-3">
-                        Our Independence Makes.
-                    </li>
-                </ul>
+                <!-- List Section with Right Nishani Image and Happy Clients Section -->
+                <div class="flex justify-between gap-10">
+                    <!-- List Section -->
+                    <ul class="list-none mb-6 space-y-4 w-1/2">
+                        <li class="flex items-center text-gray-400">
+                            <img src="images/Right-nishani.png" alt="Right Nishani" class="w-5 h-5 mr-3">
+                            Experienced Attorneys Professional.
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <img src="images/Right-nishani.png" alt="Right Nishani" class="w-5 h-5 mr-3">
+                            Committed to Helping our Clients.
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <img src="images/Right-nishani.png" alt="Right Nishani" class="w-5 h-5 mr-3">
+                            Experienced Attorneys Approach.
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <img src="images/Right-nishani.png" alt="Right Nishani" class="w-5 h-5 mr-3">
+                            Our Independence Makes.
+                        </li>
+                    </ul>
 
-                <!-- Happy Clients Section with Background Image -->
-                <div class="relative text-center rounded-lg overflow-hidden">
-                    <!-- Background Image with square aspect ratio -->
-                    <div class="relative w-[200px] h-[200px] md:h-[150px] bg-cover bg-center ml-auto"
-                        style="background-image: url('images/About-Rectangle.png');">
-                        <!-- Content Over the Image -->
-                        <div class="absolute inset-0 flex justify-center items-center z-10">
-                            <p class="text-4xl font-bold text-pink">
-                                4567
-                            </p>
-                        </div>
-                        <div class="absolute inset-0 flex justify-center items-center z-10 mt-12">
-                            <p class="text-gray-400">
-                                Happy Clients
-                            </p>
+                    <!-- Happy Clients Section -->
+                    <div class="relative text-center w-1/2">
+                        <!-- Background Image with square aspect ratio -->
+                        <div class="relative w-[200px] h-[200px] md:h-[150px] bg-cover bg-center ml-auto"
+                            style="background-image: url('images/About-Rectangle.png');">
+                            <!-- Content Over the Image -->
+                            <div class="absolute inset-0 flex justify-center items-center z-10">
+                                <p class="text-6xl font-bold">
+                                    4567
+                                </p>
+                            </div>
+                            <div class="absolute inset-0 flex justify-center items-center z-10 mt-12 pt-8">
+                                <p class="text-gray-400 text-lg">
+                                    Happy Clients.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -234,9 +246,15 @@
             <!-- Left Content -->
             <div>
                 <h2
-                    class="text-3xl md:text-4xl font-saira text-white mb-4 py-2 hover:text-pink-500 transition-colors duration-300">
-                    Exclusive Designs</h2>
-                <p class="leading-relaxed mb-6 font-jost hover:text-pink-500 transition-colors duration-300">
+                    class="text-3xl md:text-4xl font-saira text-white mb-2 hover:text-pink-500 transition-colors duration-300">
+                    Exclusive Designs
+                </h2>
+
+                <!-- Decorative Line -->
+                <img src="images/Line 3.png" alt="Decorative Line"
+                    class="w-32 sm:w-60 h-auto transition-transform duration-300 hover:scale-110">
+
+                <p class="leading-relaxed mb-6 font-jost hover:text-pink-500 transition-colors duration-300 mt-8">
                     Our journey has been marked by a relentless pursuit of unique and exclusive designs.<br />
                     From the earliest days, our team of talented designers and artisans have been<br />
                     dedicated to pushing the boundaries of creativity. We understand that fashion is an<br />
@@ -263,9 +281,14 @@
             <!-- Right Content -->
             <div>
                 <h2
-                    class="text-3xl md:text-4xl font-saira text-white mb-4 py-2 hover:text-pink-500 transition-colors duration-300">
+                    class="text-3xl md:text-4xl font-saira text-white mb-2 py-2 hover:text-pink-500 transition-colors duration-300">
                     Global Reach</h2>
-                <p class="leading-relaxed mb-6 font-jost hover:text-pink-500 transition-colors duration-300">
+
+                <!-- Decorative Line -->
+                <img src="images/Line 3.png" alt="Decorative Line"
+                    class="w-32 sm:w-60 h-auto transition-transform duration-300 hover:scale-110">
+
+                <p class="mt-8 leading-relaxed mb-6 font-jost hover:text-pink-500 transition-colors duration-300">
                     As our journey progressed, we realized the importance of forging strong global<br />
                     connections. Today, Global Glam is proud to have established a significant presence<br />
                     in international markets. Our fabrics have adorned runways, graced red carpets, and<br />
@@ -281,8 +304,12 @@
             <!-- Left Content -->
             <div>
                 <h2
-                    class="text-3xl md:text-4xl font-saira text-white mb-4 py-2 hover:text-pink-500 transition-colors duration-300">
+                    class="text-3xl md:text-4xl font-saira text-white py-2 hover:text-pink-500 transition-colors duration-300">
                     Customer Satisfaction</h2>
+                <!-- Decorative Line -->
+                <img src="images/Line 3.png" alt="Decorative Line"
+                    class="w-32 sm:w-80 h-auto mb-8 transition-transform duration-300 hover:scale-110">
+
                 <p class="leading-relaxed mb-6 font-jost hover:text-pink-500 transition-colors duration-300">
                     Throughout our journey, one thing has remained constant – our dedication to<br />
                     customer satisfaction. We firmly believe that our success is intertwined with the<br />
@@ -309,8 +336,12 @@
             <!-- Right Content -->
             <div>
                 <h2
-                    class="text-3xl md:text-4xl font-saira text-white mb-4 py-2 hover:text-pink-500 transition-colors duration-300">
+                    class="text-3xl md:text-4xl font-saira text-white py-2 hover:text-pink-500 transition-colors duration-300">
                     Join the Global Glam Experience</h2>
+                <!-- Decorative Line -->
+                <img src="images/Line 3.png" alt="Decorative Line"
+                    class="w-32 sm:w-80 mb-8 h-auto transition-transform duration-300 hover:scale-110">
+
                 <p class="leading-relaxed mb-6 font-jost hover:text-pink-500 transition-colors duration-300">
                     Since 2005, Global Glam has been on a remarkable journey, shaping the world of luxury<br />
                     fabrics. Whether you are a fashion designer, a boutique owner, or a fashion enthusiast with an
@@ -325,7 +356,12 @@
 
     <!-- Our Media Section -->
     <section class="container mx-auto px-4 py-12">
-        <h1 class="text-4xl font-bold text-center mb-8">Our Media</h1>
+        <h1 class="text-4xl font-bold text-center">Our Media</h1>
+
+        <!-- Decorative Line -->
+        <img src="images/Line 3.png" alt="Decorative Line"
+            class="mx-auto mb-6 w-28 sm:w-30 h-auto transition-transform duration-300 hover:scale-110">
+
 
         <!-- Video Section -->
         <div

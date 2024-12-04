@@ -247,10 +247,18 @@
 
       <!-- Content Section -->
       <div class="lg:w-1/2 lg:pl-12">
-        <!-- Title and Subtitle -->
-        <h2 class="text-4xl font-bold mb-6 text-white">About Us</h2>
+        <!-- Title and Subtitle Section -->
+        <div>
+          <!-- Title -->
+          <h2 class="text-4xl font-bold mb-1 text-white">About Us</h2>
 
-        <h3 class="text-2xl mb-4 text-pink">Our Journey</h3>
+          <!-- Line Image -->
+          <img src="images/Line 3.png" alt="Decorative Line"
+            class="w-32 sm:w-38 h-auto transition-transform duration-300 hover:scale-110">
+        </div>
+
+
+        <h3 class="text-2xl mb-4 mt-6 text-pink">Our Journey</h3>
 
         <!-- List Section -->
         <ul class="space-y-4 text-white">
@@ -289,9 +297,12 @@
     <section class="py-16 bg-dark-blue relative">
       <div class="container mx-auto px-4">
         <!-- Title -->
-        <h2 class="text-4xl font-bold mb-12 text-center text-white relative z-10">
+        <h2 class="text-4xl font-bold mb-2 text-white relative z-10">
           Our Products
         </h2>
+        <!-- Line Image -->
+        <img src="images/Line 3.png" alt="Decorative Line"
+          class="mb-8 w-32 sm:w-40 h-auto transition-transform duration-300 hover:scale-110">
 
         <!-- Product Section -->
         <div class="flex flex-col lg:flex-row items-center lg:space-x-12 relative z-10">
@@ -339,64 +350,64 @@
     <!-- Gallery Section -->
     <section class="py-12">
       <div class="max-w-7xl mx-auto px-6">
-        <h2 class="text-3xl font-bold text-white mb-4 transition-all duration-300 hover:text-pink-500">Gallery</h2>
-        <p class="text-gray-300 mb-6 transition-all duration-300 hover:text-gray-100">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac
-          consequat risus, a interdum nunc. Mauris eu nisi non diam
-          tincidunt mollis. Morbi lobortis lacinia dui at gravida. Integer nisi
-          nibh, sollicitudin eu commodo a, vehicula nec leo.
-          <br />
-          Our spacious banquet’s capacity is for 200+ people to enjoy the
-          function. Our staff will handle your entire event, all you have to
-          make sure is that all your guests enjoy.
-        </p>
+        <!-- Two-Column Layout -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+          <!-- Left Column (Text Content) -->
+          <div>
+            <!-- Title -->
+            <h2 class="text-3xl font-bold text-white mb-2 transition-all duration-300 hover:text-pink-500">
+              Gallery
+            </h2>
 
-        <!-- Two-Column Layout with Content on Left and Images on Right -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <!-- Left Column (Content) -->
-          <div class="flex flex-col justify-center space-y-4">
-            <p class="text-gray-300 text-sm transition-all duration-300 hover:text-gray-100">
-              Our spacious banquet hall can comfortably accommodate over 200 guests. Whether it's a wedding, conference,
-              or corporate event, we provide a luxury experience with top-tier services. Our staff will handle every
-              detail, leaving you to enjoy the occasion while your guests have a memorable time.
+            <!-- Decorative Line -->
+            <img src="images/Line 3.png" alt="Decorative Line"
+              class="mt-1 w-32 sm:w-40 h-auto transition-transform duration-300 hover:scale-110">
+
+            <!-- Paragraph Content -->
+            <p class="text-gray-300 mt-4 transition-all duration-300 hover:text-gray-100">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac<br />
+              consequat risus, a interdum nunc. Mauris eu nisi non diam<br />
+              tincidunt mollis. Morbi lobortis lacinia dui at gravida. Integer nisi<br />
+              nibh, sollicitudin eu commodo a, vehicula nec leo.
+              <br />
+              <br />
+              Our spacious banquet’s capacity is for 200+ people to enjoy the<br />
+              function. Our staff will handle your entire event, all you have to<br />
+              make sure is that all your guests enjoy.
             </p>
-            <a href="#"
-              class="text-pink-500 font-medium hover:text-pink-700 text-sm transition-all duration-300 hover:underline">Learn
-              More &rarr;</a>
+
+            <!-- View All Link -->
+            <button
+              class="mt-8 bg-pink-600 text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-pink-700 flex items-center gap-2 transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
+              style="background: url('images/Contact-Border.png') no-repeat center; background-size: contain;">
+              <span>View All >></span>
+            </button>
           </div>
 
           <!-- Right Column (Gallery Images) -->
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="relative group">
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-20">
+            <div class="relative group mt-5">
               <img src="images/Gallery-1.png" alt="Gallery Image 1"
                 class="rounded-md shadow-lg group-hover:opacity-75 w-full h-auto object-cover transition-all duration-300 group-hover:scale-105">
             </div>
             <div class="relative group">
               <img src="images/Gallery-2.png" alt="Gallery Image 2"
-                class="rounded-md shadow-lg group-hover:opacity-75 w-full h-auto object-cover transition-all duration-300 group-hover:scale-105">
+                class="rounded-md shadow-lg group-hover:opacity-75 w-full h-full object-cover transition-all duration-300 group-hover:scale-105">
             </div>
-            <div class="relative group">
+            <div class="relative group mt-5">
               <img src="images/Gallery-3.png" alt="Gallery Image 3"
                 class="rounded-md shadow-lg group-hover:opacity-75 w-full h-auto object-cover transition-all duration-300 group-hover:scale-105">
             </div>
           </div>
         </div>
 
-        <!-- View All Link -->
-        <button
-          class="mt-8 bg-pink-600 text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-pink-700 flex items-center gap-2 transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
-          style="background: url('images/Contact-Border.png') no-repeat center; background-size: contain;">
-          <span>View All >></span>
-        </button>
-      </div>
-
-      <!-- Slider-Tapka Image -->
-      <div class="flex justify-center mt-8">
-        <img src="images/Slider-tapka.png" alt="Slider Tapka"
-          class="max-w-20 h-auto transition-all duration-300 hover:scale-110">
+        <!-- Slider-Tapka Image -->
+        <div class="flex justify-center mt-8">
+          <img src="images/Slider-tapka.png" alt="Slider Tapka"
+            class="max-w-20 h-auto transition-all duration-300 hover:scale-110">
+        </div>
       </div>
     </section>
-
 
     <!-- Luxury and Quality Section -->
     <section class="py-12 bg-gradient-to-b from-dark-purple to-light-purple">
@@ -409,7 +420,7 @@
 
           <!-- Line Image -->
           <img src="images/Line 3.png" alt="Decorative Line"
-            class="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-32 h-auto transition-all duration-300 hover:scale-110">
+            class="absolute top-full left-[550px] transform -translate-x-1/2 mt-0 w-40 h-auto transition-all duration-300 hover:scale-110">
         </div>
 
         <!-- Image and Content Section -->
@@ -421,13 +432,14 @@
 
         <!-- Content Section -->
         <div class="flex flex-col items-center justify-center gap-8 md:flex-row lg:text-left py-2">
-          <div class="max-w-xl lg:max-w-4xl text-center transition-all duration-300 hover:text-gray-100">
+          <div class="max-w-xl lg:max-w-6xl text-center transition-all duration-300 hover:text-gray-100 mt-2">
             <p class="text-gray-300">
               We believe that luxury is not just about aesthetics; it is a reflection of exceptional craftsmanship and
-              superior quality. From the very beginning, we set out to redefine the standards of luxury fabrics. At
-              Global Glam, we go above and beyond to source the finest materials from around the world, ensuring that
-              our fabrics meet the highest standards of excellence. From rich silk and plush velvet to intricate lace
-              and opulent brocade, each piece in our collection is a testament to our dedication to luxury and quality.
+              superior quality. From the very beginning, we set out to redefine the
+              standards of luxury fabrics. At Global Glam, we go above and beyond to source the finest materials from
+              around the world, ensuring that our fabrics meet the highest
+              standards of excellence. From rich silk and plush velvet to intricate lace and opulent brocade, each piece
+              in our collection is a testament to our dedication to luxury and quality.
             </p>
           </div>
         </div>
@@ -447,8 +459,8 @@
             Our Trust Value</h2>
 
           <!-- Line Image aligned with the heading's starting point -->
-          <img src="images/Line 4.png" alt="Decorative Line"
-            class="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-48 h-auto transition-all duration-300 hover:scale-110">
+          <img src="images/Line 3.png" alt="Decorative Line"
+            class="absolute top-full left-[600px] transform -translate-x-1/2 mt-1 w-40 h-auto transition-all duration-300 hover:scale-110">
         </div>
 
         <p class="mt-4 text-lg text-gray-300">
@@ -508,6 +520,10 @@
           <div class="text-center lg:text-left">
             <h3 class="text-4xl font-bold text-white transition-all duration-300 hover:text-pink-500">Client
               Testimonials: Our Global<br />Impact in Their Words</h3>
+            <!-- Decorative Line -->
+            <img src="images/Line 3.png" alt="Decorative Line"
+              class="mt-2 w-32 sm:w-96 h-auto transition-transform duration-300 hover:scale-110">
+
             <p class="mt-4 text-gray-300">
               We Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien arcu, molestie ut eros<br />
               pharetra, elementum semper ipsum. Duis in nulla gravida, tincidunt lorem nec, interdum arcu.<br />Morbi
@@ -526,13 +542,23 @@
     <!-- Blog Section -->
     <section class="max-w-7xl mx-auto py-12 px-6">
       <header class="flex justify-between items-center mb-6">
-        <h1 class="text-3xl font-bold text-white">Our Latest Blogs</h1>
+        <div class="flex flex-col">
+          <!-- Title -->
+          <h1 class="text-3xl font-bold text-white">Our Latest Blogs</h1>
+
+          <!-- Decorative Line -->
+          <img src="images/Line 3.png" alt="Decorative Line"
+            class="mt-2 w-32 sm:w-60 h-full transition-transform duration-300 hover:scale-110">
+        </div>
+
+        <!-- View All Button -->
         <a href="#"
           class="inline-block bg-pink-500 text-white hover:bg-pink-400 transition font-medium py-3 px-6 rounded-lg shadow-lg hover:scale-105 transform duration-300"
           style="background: url('images/Contact-Border.png') no-repeat center; background-size: contain;">
           <span class="z-10">View All &raquo;</span>
         </a>
       </header>
+
 
       <div class="grid md:grid-cols-3 gap-6">
         <!-- Blog Card -->
@@ -595,30 +621,46 @@
       <!-- Commitment to Sustainability Section -->
       <div
         class="mt-12 bg-gradient-to-b p-6 rounded-lg flex items-center space-x-6 shadow-lg hover:shadow-xl transition-all duration-300">
+        <!-- Image -->
         <img src="images/Sustainability.png" alt="Sustainability"
           class="rounded-lg w-1/3 transform hover:scale-105 transition-all duration-300">
+
+        <!-- Text Content -->
         <div>
-          <h2 class="text-2xl font-bold mb-4 hover:text-pink-600 transition-all duration-300">Commitment to
+          <!-- Title -->
+          <h2 class="text-4xl font-bold mb-4 hover:text-pink-600 transition-all duration-300">Commitment to
             Sustainability</h2>
+
+          <!-- Decorative Line -->
+          <img src="images/Line 3.png" alt="Decorative Line"
+            class="mb-4 w-24 sm:w-80 h-auto transition-transform duration-300 hover:scale-110">
+
+          <!-- Paragraph -->
           <p class="text-gray-400 leading-relaxed">
-            As our journey unfolded, we recognized the importance of sustainability in the fashion industry. We are
-            committed to minimizing our ecological footprint by adopting eco-friendly practices and promoting ethical
-            sourcing. By partnering with artisans and manufacturers who share our values, we contribute to a more
-            sustainable and responsible future, ensuring that the luxury we provide is not at the expense of our planet.
+            &raquo; As our journey unfolded, we recognized the importance of sustainability in the fashion industry. We
+            are committed
+            to minimizing our ecological footprint by adopting eco-friendly practices and promoting ethical sourcing. By
+            partnering with artisans and manufacturers who share our values, we contribute to a more sustainable and
+            responsible future, ensuring that the luxury we provide is not at the expense of our planet.
           </p>
+
         </div>
       </div>
+
     </section>
 
 
     <!-- Reach Out Section -->
     <section class="max-w-7xl mx-auto py-12 px-6">
-      <div
-        class="bg-gradient-to-b rounded-3xl shadow-lg flex flex-col lg:flex-row items-center lg:items-center px-8 py-12 space-y-8 lg:space-y-0 lg:space-x-12 hover:shadow-2xl transition-all duration-300">
+      <div class="bg-gradient-to-b rounded-3xl shadow-lg flex flex-col lg:flex-row items-center lg:items-center px-8 py-12 space-y-8 lg:space-y-0 lg:space-x-12 hover:shadow-2xl transition-all duration-300">
         <!-- Text Content -->
         <div class="lg:w-1/2 text-center lg:text-left">
-          <h2 class="text-4xl font-extrabold mb-4 text-white leading-tight">Reach Out</h2>
-          <p class="text-gray-300 text-lg mb-6">
+          <h2 class="text-4xl font-extrabold text-white leading-tight">Reach Out</h2>
+          
+          <!-- Decorative Line -->
+          <img src="images/Line 3.png" alt="Decorative Line" class="mt-2 w-32 sm:w-40 h-auto transition-transform duration-300 hover:scale-110">
+    
+          <p class="text-gray-300 text-lg mb-6 mt-3">
             Please don’t hesitate to contact us with any questions or to schedule a service today.
           </p>
           <a href="#"
@@ -627,15 +669,15 @@
             <span class="z-10">Get a Quote &raquo;</span>
           </a>
         </div>
+        
         <!-- Image -->
         <div class="lg:w-1/2 flex justify-end">
           <img src="images/reach-women.png" alt="Contact Us"
             class="w-full h-[250px] max-w-sm lg:max-w-md object-contain hover:scale-105 transition-all duration-300">
         </div>
-
       </div>
     </section>
-
+    
 
   </section>
 
