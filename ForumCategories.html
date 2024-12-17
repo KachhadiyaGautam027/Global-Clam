@@ -45,7 +45,7 @@
         <a href="./ContactUs.html"
             class="hidden md:flex relative bg-pink-600 text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-pink-700 flex items-center gap-2"
             style="background: url('images/Contact-Border.png') no-repeat center; background-size: contain;">
-            <span class="z-10">Contact Now &rarr;</span>
+            <span class="z-10">Contact Now >></span>
         </a>
 
         <!-- Mobile Menu Toggle -->
@@ -136,16 +136,138 @@
     </section>
 
 
-   <!-- Main Container -->
-<div class="flex flex-col items-center py-12 sm:py-16 lg:py-24" style="background-color: rgba(8, 6, 23, 1);">
-    <!-- Set background color -->
+    <!-- Main Container -->
+    <!-- <div class="flex flex-col items-center py-12 sm:py-16 lg:py-24" style="background-color: rgba(8, 6, 23, 1);">
 
-    <!-- Centered Image -->
-    <div class="w-full max-w-4xl rounded-md">
-        <!-- Match background color -->
-        <img src="images/Forum-Categories.png" alt="Forum-Categories Section" class="w-full h-auto object-cover rounded-md">
+        <div class="w-full max-w-4xl rounded-md">
+            <img src="images/Forum-Categories.png" alt="Forum-Categories Section"
+                class="w-full h-auto object-cover rounded-md">
+        </div>
+    </div> -->
+
+
+    <div class="max-w-7xl mx-auto p-6">
+        <!-- Navigation -->
+        <nav class="pt-4 mb-4">
+            <div class="flex justify-center">
+                <ul class="flex">
+                    <li>
+                        <a href="/Forum.html"
+                            class="bg-[#0a051c] inline-block py-4 px-6 text-gray-400 hover:text-white font-semibold"
+                            style="background: rgba(74, 108, 247, 0.03);">All
+                            Posts</a>
+                    </li>
+                    <li>
+                        <a href="/ForumCategories.html"
+                            class="bg-[#0a051c] inline-block py-4 px-6 text-white font-semibold"
+                            style="background: rgba(96, 114, 190, 0.08); ">Categories</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="bg-[#0a051c] inline-block py-4 px-6 text-gray-400 hover:text-white font-semibold"
+                            style="background: rgba(74, 108, 247, 0.03);">My Posts</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Search and Create Post -->
+        <div class="flex justify-between items-center mb-8">
+            <div class="relative flex-1">
+                <input type="search" placeholder="Search"
+                    class="w-full bg-[#1a1625] border border-gray-700 rounded-lg py-2 px-4 text-white focus:outline-none focus:border-purple-500">
+                <button class="absolute right-3 top-1/2 -translate-y-1/2">
+                    <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </button>
+            </div>
+            <button
+                class="ml-4 px-4 py-3 bg-purple-600 hover:bg-purple-700 rounded-lg flex items-center space-x-2 transition-colors flex-shrink-0 relative"
+                style="background: url('images/Contact-Border.png') no-repeat center; background-size: contain;">
+                <span class="z-10">Create New Post >></span>
+            </button>
+        </div>
+
+
+        <!-- Categories Section -->
+        <div class="bg-gradient-to-r from-[#252143] to-[#2e2954] p-5 rounded-lg shadow-lg">
+            <!-- Table Header -->
+            <div class="grid grid-cols-4 text-gray-400 text-sm font-medium mb-2">
+                <div>Description</div>
+                <div class="text-center">View</div>
+                <div class="text-center">Comment</div>
+                <div class="text-center">Status</div>
+            </div>
+            <!-- Separator Line -->
+            <div class="border-b border-gray-600 mb-4"></div>
+        
+            <!-- First Row -->
+            <div class="grid grid-cols-4 items-center bg-gradient-to-r from-[#252143] to-[#2e2954] p-4 rounded-lg mb-3">
+                <div class="flex items-center space-x-4">
+                    <img src="images/Description-1.png" alt="General" class="w-14 h-14 rounded-lg shadow-lg">
+                    <div>
+                        <h3 class="font-semibold text-white">General Discussion</h3>
+                        <p class="text-gray-400 text-xs">Share stories, ideas, pictures, and more!</p>
+                    </div>
+                </div>
+                <div class="text-center text-white">03</div>
+                <div class="text-center text-white">01</div>
+                <div class="text-center">
+                    <button class="bg-indigo-600 bg-opacity-20 px-4 py-2 rounded-lg hover:bg-opacity-30"    >
+                        Follow
+                    </button>
+                </div>
+            </div>
+        
+            <!-- Second Row -->
+            <div class="grid grid-cols-4 items-center bg-gradient-to-r from-[#252143] to-[#2e2954] p-4 rounded-lg">
+                <div class="flex items-center space-x-4">
+                    <img src="images/Description-2.png" alt="Q&A" class="w-14 h-14 rounded-lg shadow-lg">
+                    <div>
+                        <h3 class="font-semibold text-white">Questions & Answers</h3>
+                        <p class="text-gray-400 text-xs">Get answers and share knowledge.</p>
+                    </div>
+                </div>
+                <div class="text-center text-white">00</div>
+                <div class="text-center text-white">00</div>
+                <div class="text-center">
+                    <button class="bg-indigo-600 bg-opacity-20  px-4 py-2 rounded-lg">
+                        Follow
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        
+
+        <!-- Featured Post Section -->
+        <div
+            class="bg-gradient-to-r from-[#1a1735] via-[#1c1a40] to-[#18162e] p-6 rounded-lg shadow-lg mt-6 flex space-x-8 items-start">
+            <!-- Enlarged Image -->
+            <img src="images/Categories.png" alt="Featured" class="w-full h-64 rounded-lg object-cover shadow-lg">
+            <div>
+                <h3 class="text-2xl font-bold mb-3">Cisil Gorucu</h3>
+                <p class="text-gray-400 text-base mb-4">
+                    Sparkling Style: the art of sequin clothing manufacturing.
+                </p>
+                <p class="text-gray-300 text-sm mb-6 leading-relaxed">
+                    Transform your plain tops and tees into glamorous statement pieces with sequin fabric. Learn how to
+                    create
+                    eye-catching sequin patterns on the sleeves, collar, or pocket area, turning an everyday garment
+                    into a
+                    fashion-forward must-have.
+                </p>
+                <div class="flex items-center space-x-8 text-sm text-gray-400">
+                    <div>👁️ 03</div>
+                    <div>💬 00</div>
+                    <div>📅 14 March, 2020</div>
+                </div>
+            </div>
+        </div>
+
     </div>
-</div>
 
 
     <!-- Footer Section -->

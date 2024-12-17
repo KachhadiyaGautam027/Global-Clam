@@ -45,7 +45,7 @@
         <a href="./ContactUs.html"
             class="hidden md:flex relative bg-pink-600 text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-pink-700 flex items-center gap-2"
             style="background: url('images/Contact-Border.png') no-repeat center; background-size: contain;">
-            <span class="z-10">Contact Now &rarr;</span>
+            <span class="z-10">Contact Now >></span>
         </a>
 
         <!-- Mobile Menu Toggle -->
@@ -136,16 +136,75 @@
     </section>
 
 
-    <!-- Main Container -->
-    <div class="flex flex-col items-center py-8 sm:py-16" style="background-color: rgba(8, 6, 23, 1);">
-        <!-- Container for Image -->
+    <!-- <div class="flex flex-col items-center py-8 sm:py-16" style="background-color: rgba(8, 6, 23, 1);">
         <div class="w-full max-w-full sm:max-w-4xl rounded-md">
-            <!-- Link to Gallery -->
             <a href="./Gallery.html">
                 <img src="images/Gallery-Video.png" alt="Gallery Section" class="w-full h-auto object-cover rounded-md">
             </a>
         </div>
+    </div> -->
+
+    <!-- Main Container -->
+    <div class="w-full max-w-5xl mx-auto p-8 space-y-8">
+        <!-- Tabs Section -->
+        <div class="md:flex justify-center mb-8 md:gap-0">
+            <a href="/Gallery.html">
+                <button class="px-8 py-3 bg-[#312244] text-white font-semibold rounded-t-lg hover:bg-[#472e5b] hover:scale-105 transition-transform duration-300 focus:outline-none">
+                    Gallery
+                </button>
+            </a>
+            <button class="px-8 py-3 bg-[#472e5b] text-white font-semibold rounded-t-lg hover:bg-[#312244] hover:scale-105 transition-transform duration-300 focus:outline-none">
+                Video
+            </button>
+        </div>
+    
+        <!-- Video Section -->
+        <div class="grid gap-8">
+            <!-- Large Video -->
+            <div class="relative rounded-lg overflow-hidden shadow-lg group">
+                <img src="images/Gallery-Video1.png" alt="Large Video" class="w-full h-auto group-hover:scale-105 transition-transform duration-300">
+                <button class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hover:bg-[#740fa0] text-white p-4 rounded-full shadow-lg focus:outline-none transition-all duration-300">
+                    <img src="images/V1.png" alt="Play Button" class="w-10 h-10 group-hover:scale-110 transition-transform duration-300">
+                </button>
+            </div>
+    
+            <!-- Small Videos Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-6">
+                <!-- Small Video 1 -->
+                <div class="relative rounded-lg overflow-hidden shadow-lg group">
+                    <img src="images/Gallery-Video2.png" alt="Small Video 1" class="w-full h-auto group-hover:scale-105 transition-transform duration-300">
+                    <button class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hover:bg-[#740fa0] text-white p-3 rounded-full shadow-lg focus:outline-none transition-all duration-300">
+                        <img src="images/small-button.png" alt="Play Button" class="w-8 h-8 group-hover:scale-110 transition-transform duration-300">
+                    </button>
+                </div>
+    
+                <!-- Small Video 2 -->
+                <div class="relative rounded-lg overflow-hidden shadow-lg group">
+                    <img src="images/Gallery-Video3.png" alt="Small Video 2" class="w-full h-auto group-hover:scale-105 transition-transform duration-300">
+                    <button class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hover:bg-[#740fa0] text-white p-3 rounded-full shadow-lg focus:outline-none transition-all duration-300">
+                        <img src="images/small-button.png" alt="Play Button" class="w-8 h-8 group-hover:scale-110 transition-transform duration-300">
+                    </button>
+                </div>
+    
+                <!-- Small Video 3 -->
+                <div class="relative rounded-lg overflow-hidden shadow-lg group">
+                    <img src="images/Gallery-Video4.png" alt="Small Video 3" class="w-full h-auto group-hover:scale-105 transition-transform duration-300">
+                    <button class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hover:bg-[#740fa0] text-white p-3 rounded-full shadow-lg focus:outline-none transition-all duration-300">
+                        <img src="images/small-button.png" alt="Play Button" class="w-8 h-8 group-hover:scale-110 transition-transform duration-300">
+                    </button>
+                </div>
+    
+                <!-- Small Video 4 -->
+                <div class="relative rounded-lg overflow-hidden shadow-lg group">
+                    <img src="images/Gallery-Video5.png" alt="Small Video 4" class="w-full h-auto group-hover:scale-105 transition-transform duration-300">
+                    <button class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hover:bg-[#740fa0] text-white p-3 rounded-full shadow-lg focus:outline-none transition-all duration-300">
+                        <img src="images/small-button.png" alt="Play Button" class="w-8 h-8 group-hover:scale-110 transition-transform duration-300">
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
+    
 
 
 
