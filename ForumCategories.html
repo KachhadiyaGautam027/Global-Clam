@@ -137,138 +137,128 @@
     </section>
 
 
-    <!-- Main Container -->
-    <!-- <div class="flex flex-col items-center py-12 sm:py-16 lg:py-24" style="background-color: rgba(8, 6, 23, 1);">
-
-        <div class="w-full max-w-4xl rounded-md">
-            <img src="images/Forum-Categories.png" alt="Forum-Categories Section"
-                class="w-full h-auto object-cover rounded-md">
-        </div>
-    </div> -->
-
-<section class="about-color">
-    <div class="max-w-7xl  mx-auto p-6">
-        <!-- Navigation -->
-        <nav class="pt-4 mb-4">
+    <section class="about-color py-12 bg-gradient-to-b from-[#1A002E] via-[#1B0032] to-[#000000]"> <!-- Added py-12 for top and bottom padding -->
+        <div class="max-w-7xl mx-auto p-6">
+          <!-- Navigation -->
+          <nav class="pt-4 mb-4">
             <div class="flex justify-center">
-                <ul class="flex">
-                    <li>
-                        <a href="/Global-Clam/Forum.html"
-                            class="bg-[#0a051c] inline-block py-4 px-6 text-gray-400 hover:text-white font-semibold"
-                            style="background: rgba(74, 108, 247, 0.03);">All
-                            Posts</a>
-                    </li>
-                    <li>
-                        <a href="/Global-Clam/ForumCategories.html"
-                            class="bg-[#0a051c] inline-block py-4 px-6 text-white font-semibold"
-                            style="background: rgba(96, 114, 190, 0.08); ">Categories</a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="bg-[#0a051c] inline-block py-4 px-6 text-gray-400 hover:text-white font-semibold"
-                            style="background: rgba(74, 108, 247, 0.03);">My Posts</a>
-                    </li>
-                </ul>
+              <ul class="flex">
+                <li>
+                  <a href="/Global-Clam/Forum.html"
+                    class="bg-[#0a051c] inline-block py-4 px-6 text-gray-400 hover:text-white font-semibold"
+                    style="background: rgba(74, 108, 247, 0.03);">All
+                    Posts</a>
+                </li>
+                <li>
+                  <a href="/Global-Clam/ForumCategories.html"
+                    class="bg-[#0a051c] inline-block py-4 px-6 text-white font-semibold"
+                    style="background: rgba(96, 114, 190, 0.08); ">Categories</a>
+                </li>
+                <li>
+                  <a href="#"
+                    class="bg-[#0a051c] inline-block py-4 px-6 text-gray-400 hover:text-white font-semibold"
+                    style="background: rgba(74, 108, 247, 0.03);">My Posts</a>
+                </li>
+              </ul>
             </div>
-        </nav>
-
-        <!-- Search and Create Post -->
-        <div class="flex justify-between items-center mb-8">
+          </nav>
+      
+          <!-- Search and Create Post -->
+          <div class="flex justify-between items-center mb-8">
             <div class="relative flex-1">
-                <input type="search" placeholder="Search"
-                    class="w-full border border-[#1e172e] rounded-lg py-2 px-4 text-white bg-transparent focus:outline-none focus:border-purple-500">
-                <button class="absolute right-3 top-1/2 -translate-y-1/2">
-                    <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                    </svg>
-                </button>
+              <input type="search" placeholder="Search"
+                class="w-full border border-[#1e172e] rounded-lg py-2 px-4 text-white bg-transparent focus:outline-none focus:border-purple-500">
+              <button class="absolute right-3 top-1/2 -translate-y-1/2">
+                <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              </button>
             </div>
             <button
-                class="ml-4 px-4 py-3 bg-purple-600 hover:bg-purple-700 rounded-lg flex items-center space-x-2 transition-colors flex-shrink-0 relative"
-                style="background: url('images/Contact-Border.png') no-repeat center; background-size: contain;">
-                <span class="z-10">Create New Post >></span>
+              class="ml-4 px-4 py-3 bg-purple-600 hover:bg-purple-700 rounded-lg flex items-center space-x-2 transition-colors flex-shrink-0 relative"
+              style="background: url('images/Contact-Border.png') no-repeat center; background-size: contain;">
+              <span class="z-10">Create New Post >></span>
             </button>
-        </div>
-
-    
-        <!-- Categories Section -->
-        <div class="rounded-lg p-6 border border-[#1e172e] bg-white bg-opacity-5 shadow-lg">
+          </div>
+      
+          <!-- Categories Section -->
+          <div class="rounded-lg p-6 border border-[#1e172e] bg-white bg-opacity-5 shadow-lg">
             <!-- Table Header -->
             <div class="grid grid-cols-4 text-gray-400 text-sm font-medium mb-2">
-                <div>Description</div>
-                <div class="text-center">View</div>
-                <div class="text-center">Comment</div>
-                <div class="text-center">Status</div>
+              <div>Description</div>
+              <div class="text-center">View</div>
+              <div class="text-center">Comment</div>
+              <div class="text-center">Status</div>
             </div>
             <!-- Separator Line -->
             <div class="border-b border-gray-600 mb-4"></div>
-        
+      
             <!-- First Row -->
-            <div class="grid grid-cols-4 items-center  p-4 rounded-lg mb-3">
-                <div class="flex items-center space-x-4">
-                    <img src="images/Description-1.png" alt="General" class="w-14 h-14 rounded-lg shadow-lg">
-                    <div>
-                        <h3 class="font-semibold text-white">General Discussion</h3>
-                        <p class="text-gray-400 text-xs">Share stories, ideas, pictures, and more!</p>
-                    </div>
+            <div class="grid grid-cols-4 items-center p-4 rounded-lg mb-3">
+              <div class="flex items-center space-x-4">
+                <img src="images/Description-1.png" alt="General" class="w-14 h-14 rounded-lg shadow-lg">
+                <div>
+                  <h3 class="font-semibold text-white">General Discussion</h3>
+                  <p class="text-gray-400 text-xs">Share stories, ideas, pictures, and more!</p>
                 </div>
-                <div class="text-center text-white">03</div>
-                <div class="text-center text-white">01</div>
-                <div class="text-center">
-                    <button class="bg-indigo-600 bg-opacity-20 px-4 py-2 rounded-lg hover:bg-opacity-30"    >
-                        Follow
-                    </button>
-                </div>
+              </div>
+              <div class="text-center text-white">03</div>
+              <div class="text-center text-white">01</div>
+              <div class="text-center">
+                <button class="bg-indigo-600 bg-opacity-20 px-4 py-2 rounded-lg hover:bg-opacity-30">
+                  Follow
+                </button>
+              </div>
             </div>
-        
+      
             <!-- Second Row -->
-            <div class="grid grid-cols-4 items-center  p-4 rounded-lg">
-                <div class="flex items-center space-x-4">
-                    <img src="images/Description-2.png" alt="Q&A" class="w-14 h-14 rounded-lg shadow-lg">
-                    <div>
-                        <h3 class="font-semibold text-white">Questions & Answers</h3>
-                        <p class="text-gray-400 text-xs">Get answers and share knowledge.</p>
-                    </div>
+            <div class="grid grid-cols-4 items-center p-4 rounded-lg">
+              <div class="flex items-center space-x-4">
+                <img src="images/Description-2.png" alt="Q&A" class="w-14 h-14 rounded-lg shadow-lg">
+                <div>
+                  <h3 class="font-semibold text-white">Questions & Answers</h3>
+                  <p class="text-gray-400 text-xs">Get answers and share knowledge.</p>
                 </div>
-                <div class="text-center text-white">00</div>
-                <div class="text-center text-white">00</div>
-                <div class="text-center">
-                    <button class="bg-indigo-600 bg-opacity-20  px-4 py-2 rounded-lg">
-                        Follow
-                    </button>
-                </div>
+              </div>
+              <div class="text-center text-white">00</div>
+              <div class="text-center text-white">00</div>
+              <div class="text-center">
+                <button class="bg-indigo-600 bg-opacity-20 px-4 py-2 rounded-lg">
+                  Follow
+                </button>
+              </div>
             </div>
-        </div>
-        
-        
-
-        <!-- Featured Post Section -->
-        <div class="mt-6 flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-8 items-start rounded-lg p-6 border border-[#1e172e] bg-white bg-opacity-5 shadow-lg">
+          </div>
+      
+          <!-- Featured Post Section -->
+          <div
+            class="mt-6 flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-8 items-start rounded-lg p-6 border border-[#1e172e] bg-white bg-opacity-5 shadow-lg">
             <!-- Enlarged Image -->
-            <img src="images/Categories.png" alt="Featured" class="w-full h-64 md:w-1/2 rounded-lg object-cover shadow-lg">
+            <img src="images/Categories.png" alt="Featured"
+              class="w-full h-64 md:w-1/2 rounded-lg object-cover shadow-lg">
             <div class="flex flex-col md:flex-1">
-                <h3 class="text-2xl font-bold mb-3">Cisil Gorucu</h3>
-                <p class="text-gray-400 text-base mb-4">
-                    Sparkling Style: the art of sequin clothing manufacturing.
-                </p>
-                <p class="text-gray-300 text-sm mb-6 leading-relaxed">
-                    Transform your plain tops and tees into glamorous statement pieces with sequin fabric. Learn how to
-                    create
-                    eye-catching sequin patterns on the sleeves, collar, or pocket area, turning an everyday garment
-                    into a
-                    fashion-forward must-have.
-                </p>
-                <div class="flex items-center space-x-8 text-sm text-gray-400">
-                    <div>👁️ 03</div>
-                    <div>💬 00</div>
-                    <div>📅 14 March, 2020</div>
-                </div>
+              <h3 class="text-2xl font-bold mb-3">Cisil Gorucu</h3>
+              <p class="text-gray-400 text-base mb-4">
+                Sparkling Style: the art of sequin clothing manufacturing.
+              </p>
+              <p class="text-gray-300 text-sm mb-6 leading-relaxed">
+                Transform your plain tops and tees into glamorous statement pieces with sequin fabric. Learn how
+                to
+                create
+                eye-catching sequin patterns on the sleeves, collar, or pocket area, turning an everyday garment
+                into a
+                fashion-forward must-have.
+              </p>
+              <div class="flex items-center space-x-8 text-sm text-gray-400">
+                <div>👁️ 03</div>
+                <div>💬 00</div>
+                <div>📅 14 March, 2020</div>
+              </div>
             </div>
+          </div>
         </div>
-
-    </div>
-</section>
+      </section>
 
 
     <!-- Footer Section -->
