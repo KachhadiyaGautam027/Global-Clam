@@ -25,36 +25,38 @@
 
 <body class="bg-gradient-to-b from-dark-purple to-light-purple font-poppins text-white min-h-screen">
   <!-- Header -->
-  <header class="container mx-auto px-4 py-6 flex justify-between">
-    <!-- Logo -->
-    <div>
-      <img src="images/logo.png" alt="Global Glam Logo" class="w-auto h-10">
-    </div>
+  <section class="header-color">
+    <header class="container mx-auto px-4 py-6 flex justify-between">
+      <!-- Logo -->
+      <div>
+        <img src="images/logo.png" alt="Global Glam Logo" class="w-auto h-10">
+      </div>
 
-    <!-- Desktop Navigation -->
-    <nav class="hidden md:flex space-x-8">
-      <a href="./index.html" class="hover:text-pink">Home</a>
-      <a href="./AboutUs.html" class="hover:text-pink">About Us</a>
-      <a href="./Products.html" class="hover:text-pink">Products</a>
-      <a href="./Gallery.html" class="hover:text-pink">Gallery</a>
-      <a href="./Blog.html" class="hover:text-pink">Blog</a>
-      <a href="./Forum.html" class="text-pink border-b-2 border-pink pb-1">Forum</a>
-    </nav>
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex space-x-8">
+        <a href="./index.html" class="hover:text-pink">Home</a>
+        <a href="./AboutUs.html" class="hover:text-pink">About Us</a>
+        <a href="./Products.html" class="hover:text-pink">Products</a>
+        <a href="./Gallery.html" class="hover:text-pink">Gallery</a>
+        <a href="./Blog.html" class="hover:text-pink">Blog</a>
+        <a href="./Forum.html" class="text-pink border-b-2 border-pink pb-1">Forum</a>
+      </nav>
 
-    <!-- Contact Button -->
-    <a href="./ContactUs.html"
-      class="hidden md:flex relative bg-pink-600 text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-pink-700 flex items-center gap-2"
-      style="background: url('images/Contact-Border.png') no-repeat center; background-size: contain;">
-      <span class="z-10">Contact Now >></span>
-    </a>
+      <!-- Contact Button -->
+      <a href="./ContactUs.html"
+        class="hidden md:flex relative bg-pink-600 text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-pink-700 flex items-center gap-2"
+        style="background: url('images/Contact-Border.png') no-repeat center; background-size: contain;">
+        <span class="z-10">Contact Now >></span>
+      </a>
 
-    <!-- Mobile Menu Toggle -->
-    <button id="menuToggle" class="md:hidden flex absolute right-10 top-8 text-pink">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-      </svg>
-    </button>
-  </header>
+      <!-- Mobile Menu Toggle -->
+      <button id="menuToggle" class="md:hidden flex absolute right-10 top-8 text-pink">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </header>
+  </section>
 
   <!-- Mobile Menu -->
   <div id="mobileMenu"
@@ -136,12 +138,12 @@
 
   <!-- Full-Width Header Line -->
   <div class="w-full">
-    <img src="images/Header line.png" alt="Line" class="w-full">
+    <hr style="border: none; border-top: 2px solid #130c24;" />
   </div>
 
   <!-- Banner Section -->
-  <section class="relative w-full h-[400px] md:h-[600px] flex flex-col items-center justify-center bg-cover bg-center"
-    style="background: linear-gradient(16.25deg, rgba(194, 37, 138, 0.4) -5%, rgba(10, 2, 28, 0.2) 40%), #0a021c;">
+  <section
+    class="relative maincontai-color w-full h-[400px] md:h-[600px] flex flex-col items-center justify-center bg-cover bg-center">
     <!-- Background Overlay -->
     <div class="absolute inset-0 bg-black bg-opacity-50"></div>
 
@@ -170,194 +172,178 @@
 
 
   <!-- Main Container -->
-  <!-- <div class="flex flex-col items-center py-12 sm:py-16 lg:py-16" style="background-color: rgba(8, 6, 23, 1);">
-    <div class="w-full max-w-4xl rounded-md">
-      <a href="./ForumCategories.html">
-        <img src="images/ForumAllPosts.png" alt="Gallery Section" class="w-full h-auto object-cover rounded-md">
-      </a>
+
+  <section class="about-color pt-12 pb-16">
+    <div class="max-w-4xl mx-auto px-4">
+      <!-- Navigation -->
+      <nav class="pt-6">
+        <div class="flex justify-center">
+          <ul class="flex">
+            <li>
+              <a href="/Global-Clam/Forum.html" class="bg-[#0a051c] inline-block py-4 px-6 text-white font-semibold"
+                style="background: rgba(96, 114, 190, 0.08);">All Posts</a>
+            </li>
+            <li>
+              <a href="/Global-Clam/ForumCategories.html"
+                class="bg-[#0a051c] inline-block py-4 px-6 text-gray-400 hover:text-white font-semibold"
+                style="background: rgba(74, 108, 247, 0.03);">Categories</a>
+            </li>
+            <li>
+              <a href="#" class="bg-[#0a051c] inline-block py-4 px-6 text-gray-400 hover:text-white font-semibold"
+                style="background: rgba(74, 108, 247, 0.03);">My Posts</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  
+      <!-- Main Content -->
+      <main class="space-y-8 pt-8">
+        <div class="flex items-center justify-between py-6">
+          <!-- Author Info -->
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-full bg-pink flex items-center justify-center text-xl font-bold">C</div>
+            <h2 class="text-xl font-semibold">Cisil Gorucu</h2>
+          </div>
+  
+          <!-- Search Bar -->
+          <div class="relative w-1/2">
+            <input type="text" placeholder="Search"
+              class="w-full pl-4 pr-12 py-2 bg-transparent border border-gray-400 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+  
+            <!-- Search Icon -->
+            <i class="fas fa-search absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+          </div>
+  
+          <!-- Font Awesome Link -->
+          <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+        </div>
+  
+        <!-- Article -->
+        <article class="space-y-6">
+          <h1 class="text-2xl font-bold mb-8">Sparkling Style: The Art of Sequins Clothing Manufacturing</h1>
+  
+          <p class="text-gray-300 leading-relaxed text-xs">
+            Introduction: Sequins clothing has long captivated fashion enthusiasts with its dazzling allure. The
+            shimmering appeal of sequins adds a touch of glamour and sophistication to any garment. Behind these
+            eye-catching creations lies a meticulous manufacturing process that combines craftsmanship, technology, and
+            creativity. In this article, we delve into the world of sequins clothing manufacturing, exploring the steps
+            involved and the techniques employed to create these remarkable pieces.
+          </p>
+  
+          <div class="space-y-6">
+            <!-- Section: Design and Conceptualization -->
+            <div class="space-y-2">
+              <h3 class="text-xl font-semibold flex items-center gap-2">
+                <span>>></span>
+                Design and Conceptualization
+              </h3>
+              <p class="text-gray-300 leading-relaxed pl-6">
+                The journey of sequins clothing manufacturing begins with design and conceptualization. Fashion
+                designers and creative teams work closely to develop unique and appealing designs that showcase the
+                potential of sequins. They consider factors such as garment type, color palette, pattern placement, and
+                overall aesthetic to ensure a cohesive and visually striking result.
+              </p>
+            </div>
+  
+            <!-- Section: Material Selection -->
+            <div class="space-y-2">
+              <h3 class="text-xl font-semibold flex items-center gap-2">
+                <span>>></span>
+                Material Selection
+              </h3>
+              <p class="text-gray-300 leading-relaxed pl-6">
+                Choosing the right materials is crucial in sequins clothing manufacturing. Sequins are typically made
+                from a variety of materials, including plastic, metal, and fabric. Each material offers its own
+                advantages in terms of durability, shine, and flexibility. Manufacturers carefully select the sequins
+                that align with the desired design and quality standards of the garment.
+              </p>
+            </div>
+  
+            <!-- Section: Sequin Application Techniques -->
+            <div class="space-y-2">
+              <h3 class="text-xl font-semibold flex items-center gap-2">
+                <span>>></span>
+                Sequin Application Techniques
+              </h3>
+              <p class="text-gray-300 leading-relaxed pl-6">
+                The application of sequins requires precision and expertise. Various techniques such as hand-sewing,
+                machine embroidery, or heat transfer may be employed depending on the design requirements. Each method
+                demands skilled craftsmanship to ensure proper placement and secure attachment of the sequins.
+              </p>
+            </div>
+  
+            <!-- Section: Quality Control -->
+            <div class="space-y-2">
+              <h3 class="text-xl font-semibold flex items-center gap-2">
+                <span>>></span>
+                Quality Control
+              </h3>
+              <p class="text-gray-300 leading-relaxed pl-6">
+                Maintaining quality standards is paramount in sequins clothing manufacturing. Rigorous quality control
+                measures are implemented throughout the production process. Inspections are conducted to ensure that
+                sequins are securely attached, colors are vibrant and consistent, and there are no defects or
+                irregularities in the garment.
+              </p>
+            </div>
+  
+            <!-- Section: Finishing Touches -->
+            <div class="space-y-2">
+              <h3 class="text-xl font-semibold flex items-center gap-2">
+                <span>>></span>
+                Finishing Touches
+              </h3>
+              <p class="text-gray-300 leading-relaxed pl-6">
+                Once the sequins are applied, additional steps may be taken to enhance the final product. Finishing
+                touches such as trimming excess threads, adding linings, and attaching closures are meticulously
+                executed. Attention is also given to the overall fit, comfort, and functionality of the garment,
+                ensuring it meets the expectations of the wearer.
+              </p>
+            </div>
+          </div>
+  
+          <p class="text-gray-300 leading-relaxed">
+            Conclusion: Sequins clothing manufacturing is a blend of artistry, innovation, and technical precision.
+            From the initial design concept to the final finishing touches, every step in the process requires skilled
+            craftsmanship and attention to detail. Through the careful selection of materials, the use of various
+            application techniques, and rigorous quality control, manufacturers bring to life the enchanting world of
+            sequins clothing. The result is a dazzling array of garments that allow individuals to express their unique
+            style while embracing the glamour and radiance that sequins bring to the fashion industry.
+          </p>
+  
+          <!-- Engagement Metrics -->
+          <div class="flex items-center gap-6 pt-4 border-b border-gray-600 pb-4">
+            <button class="text-gray-400 hover:text-white flex items-center">
+              <i class="far fa-heart mr-2"></i>
+              <span>00</span>
+            </button>
+            <div class="flex items-center text-gray-400">
+              <i class="far fa-eye mr-2"></i>
+              <span>31</span>
+            </div>
+            <button class="text-gray-400 hover:text-white flex items-center">
+              <i class="far fa-comment mr-2"></i>
+              <span>00</span>
+            </button>
+          </div>
+        </article>
+  
+        <!-- Comments Section -->
+        <div class="mt-12 mb-16">
+          <h3 class="text-xl font-semibold mb-4">Comments</h3>
+          <textarea placeholder="Write a Comment...."
+            class="w-full h-16 bg-transparent border border-gray-400 rounded-lg p-4 text-white resize-none focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea>
+        </div>
+      </main>
     </div>
-  </div> -->
-
-
-  <div class="max-w-4xl mx-auto px-4">
-    <!-- Navigation -->
-    <nav class="pt-6">
-      <div class="flex justify-center">
-        <ul class="flex">
-          <li>
-            <a href="/Forum.html" class="bg-[#0a051c] inline-block py-4 px-6 text-white font-semibold"
-              style="background: rgba(96, 114, 190, 0.08);">All
-              Posts</a>
-          </li>
-          <li>
-            <a href="/ForumCategories.html"
-              class="bg-[#0a051c] inline-block py-4 px-6 text-gray-400 hover:text-white font-semibold"
-              style="background: rgba(74, 108, 247, 0.03);">Categories</a>
-          </li>
-          <li>
-            <a href="#" class="bg-[#0a051c] inline-block py-4 px-6 text-gray-400 hover:text-white font-semibold"
-              style="background: rgba(74, 108, 247, 0.03);">My Posts</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-
-
-    <!-- Main Content -->
-    <main class="space-y-8 pt-8">
-      <div class="flex items-center justify-between py-6">
-        <!-- Author Info -->
-        <div class="flex items-center gap-4">
-          <div class="w-12 h-12 rounded-full bg-pink flex items-center justify-center text-xl font-bold">C</div>
-          <h2 class="text-xl font-semibold">Cisil Gorucu</h2>
-        </div>
-
-        <!-- Search Bar -->
-        <div class="relative w-1/2">
-          <input type="text" placeholder="Search"
-            class="w-full pl-4 pr-12 py-2 bg-transparent border border-gray-400 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
-
-          <!-- Search Icon -->
-          <i class="fas fa-search absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
-        </div>
-
-        <!-- Font Awesome Link -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-
-      </div>
-
-
-      <!-- Article -->
-      <article class="space-y-6">
-        <h1 class="text-2xl font-bold mb-8">Sparkling Style: The Art of Sequins Clothing Manufacturing</h1>
-
-        <p class="text-gray-300 leading-relaxed text-xs">
-          Introduction: Sequins clothing has long captivated fashion enthusiasts with its dazzling allure. The
-          shimmering appeal of sequins adds a touch of glamour and sophistication to any garment. Behind these
-          eye-catching creations lies a meticulous manufacturing process that combines craftsmanship, technology, and
-          creativity. In this article, we delve into the world of sequins clothing manufacturing, exploring the steps
-          involved and the techniques employed to create these remarkable pieces.
-        </p>
-
-        <div class="space-y-6">
-          <!-- Section: Design and Conceptualization -->
-          <div class="space-y-2">
-            <h3 class="text-xl font-semibold flex items-center gap-2">
-              <span>>></span>
-              Design and Conceptualization
-            </h3>
-            <p class="text-gray-300 leading-relaxed pl-6">
-              The journey of sequins clothing manufacturing begins with design and conceptualization. Fashion designers
-              and creative teams work closely to develop unique and appealing designs that showcase the potential of
-              sequins. They consider factors such as garment type, color palette, pattern placement, and overall
-              aesthetic to ensure a cohesive and visually striking result.
-            </p>
-          </div>
-
-          <!-- Section: Material Selection -->
-          <div class="space-y-2">
-            <h3 class="text-xl font-semibold flex items-center gap-2">
-              <span>>></span>
-              Material Selection
-            </h3>
-            <p class="text-gray-300 leading-relaxed pl-6">
-              Choosing the right materials is crucial in sequins clothing manufacturing. Sequins are typically made from
-              a variety of materials, including plastic, metal, and fabric. Each material offers its own advantages in
-              terms of durability, shine, and flexibility. Manufacturers carefully select the sequins that align with
-              the desired design and quality standards of the garment.
-            </p>
-          </div>
-
-          <!-- Section: Sequin Application Techniques -->
-          <div class="space-y-2">
-            <h3 class="text-xl font-semibold flex items-center gap-2">
-              <span>>></span>
-              Sequin Application Techniques
-            </h3>
-            <p class="text-gray-300 leading-relaxed pl-6">
-              The application of sequins requires precision and expertise. Various techniques such as hand-sewing,
-              machine embroidery, or heat transfer may be employed depending on the design requirements. Each method
-              demands skilled craftsmanship to ensure proper placement and secure attachment of the sequins.
-            </p>
-          </div>
-
-          <!-- Section: Quality Control -->
-          <div class="space-y-2">
-            <h3 class="text-xl font-semibold flex items-center gap-2">
-              <span>>></span>
-              Quality Control
-            </h3>
-            <p class="text-gray-300 leading-relaxed pl-6">
-              Maintaining quality standards is paramount in sequins clothing manufacturing. Rigorous quality control
-              measures are implemented throughout the production process. Inspections are conducted to ensure that
-              sequins are securely attached, colors are vibrant and consistent, and there are no defects or
-              irregularities in the garment.
-            </p>
-          </div>
-
-          <!-- Section: Finishing Touches -->
-          <div class="space-y-2">
-            <h3 class="text-xl font-semibold flex items-center gap-2">
-              <span>>></span>
-              Finishing Touches
-            </h3>
-            <p class="text-gray-300 leading-relaxed pl-6">
-              Once the sequins are applied, additional steps may be taken to enhance the final product. Finishing
-              touches such as trimming excess threads, adding linings, and attaching closures are meticulously executed.
-              Attention is also given to the overall fit, comfort, and functionality of the garment, ensuring it meets
-              the expectations of the wearer.
-            </p>
-          </div>
-        </div>
-
-        <p class="text-gray-300 leading-relaxed">
-          Conclusion: Sequins clothing manufacturing is a blend of artistry, innovation, and technical precision. From
-          the initial design concept to the final finishing touches, every step in the process requires skilled
-          craftsmanship and attention to detail. Through the careful selection of materials, the use of various
-          application techniques, and rigorous quality control, manufacturers bring to life the enchanting world of
-          sequins clothing. The result is a dazzling array of garments that allow individuals to express their unique
-          style while embracing the glamour and radiance that sequins bring to the fashion industry.
-        </p>
-
-        <!-- Engagement Metrics -->
-        <div class="flex items-center gap-6 pt-4 border-b border-gray-600 pb-4">
-          <button class="text-gray-400 hover:text-white flex items-center">
-            <i class="far fa-heart mr-2"></i>
-            <span>00</span>
-          </button>
-          <div class="flex items-center text-gray-400">
-            <i class="far fa-eye mr-2"></i>
-            <span>31</span>
-          </div>
-          <button class="text-gray-400 hover:text-white flex items-center">
-            <i class="far fa-comment mr-2"></i>
-            <span>00</span>
-          </button>
-        </div>
-
-      </article>
-      <!-- Comments Section -->
-      <div class="mt-12 mb-16">
-        <h3 class="text-xl font-semibold mb-4">Comments</h3>
-        <textarea placeholder="Write a Comment...."
-          class="w-full h-16 bg-transparent border border-gray-400 rounded-lg p-4 text-white resize-none focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea>
-      </div>
-
-
-    </main>
-  </div>
+  </section>
 
 
 
 
   <!-- Footer Section -->
-  <div>
-    <img src="./images/footermb.png" alt="" class="visible md:hidden">
-  </div>
-  <footer class="bg-gradient-to-br from-brand-purple to-indigo-950 text-white hidden md:flex ">
+  <footer class="footer-color text-white">
     <div class="container mx-auto px-6 py-12">
-      <!-- Main Footer Content -->
+      <!-- Footer Main Content -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
         <!-- Company Info -->
         <div class="space-y-6">
@@ -399,13 +385,12 @@
               </svg>
             </a>
           </div>
-        </div>
 
+
+        </div>
         <!-- Quick Links -->
         <div>
-          <h3 class="text-xl font-semibold mb-4 relative inline-block">
-            Quick Links
-            <!-- Decorative Line -->
+          <h3 class="text-lg font-semibold mb-4">Quick Links
             <img src="images/Footer-line.png" alt="Decorative Line"
               class="w-32 mt-1 sm:w-28 h-auto transition-transform duration-300 hover:scale-110">
           </h3>
@@ -419,8 +404,7 @@
             <li><a href="#" class="text-gray-300 hover:text-pink transition-colors">Contact Us</a></li>
           </ul>
         </div>
-
-        <!-- Contact Us -->
+        <!-- Contact Info -->
         <div>
           <h3 class="text-xl font-semibold mb-4 relative inline-block">
             Contact Us
@@ -459,20 +443,25 @@
             </li>
           </ul>
         </div>
-      </div>
 
-      <!-- Bottom Footer -->
-      <div class="w-auto border-t border-gray-700 text-gray-400 flex justify-between items-center p-2">
-        <div class="text-xs">
-          <a href="#" class="hover:text-brand-pink transition-colors">© 2023 by Global Glam</a>
-        </div>
-        <div class="flex gap-2">
-          <a href="#" class="hover:text-brand-pink transition-colors text-xs">FAQ</a>
-          <a href="#" class="hover:text-brand-pink transition-colors text-xs">Shipping and Returns</a>
-          <a href="#" class="hover:text-brand-pink transition-colors text-xs">Terms and Conditions</a>
+      </div>
+      <!-- Footer Bottom -->
+      <div class="border-t border-gray-700 pt-6">
+        <div class="flex justify-between items-center text-xs text-gray-400">
+          <div class="text-left">
+            <a href="#" class="hover:text-brand-pink transition-colors">
+              © 2024 by Global Glam
+            </a>
+          </div>
+          <div class="flex gap-4">
+            <a href="#" class="hover:text-brand-pink transition-colors">FAQ</a>
+            <span class="text-gray-500">|</span>
+            <a href="#" class="hover:text-brand-pink transition-colors">Shipping and Returns</a>
+            <span class="text-gray-500">|</span>
+            <a href="#" class="hover:text-brand-pink transition-colors">Terms and Conditions</a>
+          </div>
         </div>
       </div>
-
     </div>
   </footer>
 

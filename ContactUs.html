@@ -23,38 +23,40 @@
   </script>
 </head>
 
-<body class="bg-gradient-to-b from-dark-purple to-light-purple font-poppins text-white min-h-screen">
+<body class="font-poppins text-white min-h-screen">
   <!-- Header -->
-  <header class="container mx-auto px-4 py-6 flex justify-between">
-    <!-- Logo -->
-    <div>
-      <img src="images/logo.png" alt="Global Glam Logo" class="w-auto h-10">
-    </div>
+  <section class="header-color">
+    <header class="container mx-auto px-4 py-6 flex justify-between">
+      <!-- Logo -->
+      <div>
+        <img src="images/logo.png" alt="Global Glam Logo" class="w-auto h-10">
+      </div>
 
-    <!-- Desktop Navigation -->
-    <nav class="hidden md:flex space-x-8">
-      <a href="./index.html" class="hover:text-pink">Home</a>
-      <a href="./AboutUs.html" class="hover:text-pink">About Us</a>
-      <a href="./Products.html" class="hover:text-pink">Products</a>
-      <a href="./Gallery.html" class="hover:text-pink">Gallery</a>
-      <a href="./Blog.html" class="hover:text-pink">Blog</a>
-      <a href="./Forum.html" class="hover:text-pink">Forum</a>
-    </nav>
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex space-x-8">
+        <a href="./index.html" class="hover:text-pink">Home</a>
+        <a href="./AboutUs.html" class="hover:text-pink">About Us</a>
+        <a href="./Products.html" class="hover:text-pink">Products</a>
+        <a href="./Gallery.html" class="hover:text-pink">Gallery</a>
+        <a href="./Blog.html" class="hover:text-pink">Blog</a>
+        <a href="./Forum.html" class="hover:text-pink">Forum</a>
+      </nav>
 
-    <!-- Contact Button -->
-    <a href="./ContactUs.html"
-      class="hidden md:flex relative bg-pink-600 text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-pink-700 flex items-center gap-2"
-      style="background: url('images/Contact-Border.png') no-repeat center; background-size: contain;">
-      <span class="z-10">Contact Now >></span>
-    </a>
+      <!-- Contact Button -->
+      <a href="./ContactUs.html"
+        class="hidden md:flex relative bg-pink-600 text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-pink-700 flex items-center gap-2"
+        style="background: url('images/Contact-Border.png') no-repeat center; background-size: contain;">
+        <span class="z-10">Contact Now >></span>
+      </a>
 
-    <!-- Mobile Menu Toggle -->
-    <button id="menuToggle" class="md:hidden flex absolute right-10 top-8 text-pink">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-      </svg>
-    </button>
-  </header>
+      <!-- Mobile Menu Toggle -->
+      <button id="menuToggle" class="md:hidden flex absolute right-10 top-8 text-pink">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </header>
+  </section>
 
   <!-- Mobile Menu -->
   <div id="mobileMenu"
@@ -97,12 +99,12 @@
 
   <!-- Full-Width Header Line -->
   <div class="w-full">
-    <img src="images/Header line.png" alt="Line" class="w-full">
+    <hr style="border: none; border-top: 2px solid #130c24;" />
   </div>
 
   <!-- Banner Section -->
-  <section class="relative w-full h-[400px] md:h-[600px] flex flex-col items-center justify-center bg-cover bg-center"
-    style="background: linear-gradient(16.25deg, rgba(194, 37, 138, 0.4) -5%, rgba(10, 2, 28, 0.2) 40%), #0a021c;">
+  <section
+    class="relative maincontai-color w-full h-[400px] md:h-[600px] flex flex-col items-center justify-center bg-cover bg-center">
     <!-- Background Overlay -->
     <div class="absolute inset-0 bg-black bg-opacity-50"></div>
 
@@ -131,87 +133,85 @@
 
 
   <!-- Main Container -->
-<div class="max-w-6xl mx-auto py-14 px-6 space-y-12">
-  <!-- Contact Form Section -->
-  <section
-    class="bg-gradient-to-br from-brand-purple to-indigo-950 p-8 rounded-lg shadow-lg grid md:grid-cols-2 gap-8 items-center">
-    <!-- Form -->
-    <div>
-      <h2 class="md:text-3xl font-Saira mb-6">Get in Touch with Us
-        <!-- Decorative Line -->
-        <img src="images/Line 3.png" alt="Decorative Line"
-          class="mb-4 w-24 ml-2 sm:w-60 h-auto transition-transform duration-300 hover:scale-110 mx-auto md:mx-0">
-      </h2>
-      <form class="space-y-6">
-        <input type="text" placeholder="First Name"
-          class="w-full bg-transparent border border-gray-500 text-gray-300 px-4 py-3 rounded-lg focus:ring-2 focus:ring-pink-500 focus:outline-none placeholder-gray-400 hover:border-pink" />
-        <input type="text" placeholder="Last Name"
-          class="w-full bg-transparent border border-gray-500 text-gray-300 px-4 py-3 rounded-lg focus:ring-2 focus:ring-pink-500 focus:outline-none placeholder-gray-400 hover:border-pink" />
-        <input type="email" placeholder="Email"
-          class="w-full bg-transparent border border-gray-500 text-gray-300 px-4 py-3 rounded-lg focus:ring-2 focus:ring-pink-500 focus:outline-none placeholder-gray-400 hover:border-pink" />
-        <textarea placeholder="Message"
-          class="w-full h-24 bg-transparent border border-gray-500 text-gray-300 px-4 py-3 rounded-lg focus:ring-2 focus:ring-pink-500 focus:outline-none resize-none placeholder-gray-400 hover:border-pink"></textarea>
-        <button type="submit"
-          class="relative px-6 py-3 text-white font-medium rounded-lg flex items-center justify-center space-x-4 transition-transform duration-300 hover:scale-105 hover:bg-pink"
-          style="background: url('images/Contact-Border.png') no-repeat center; background-size: contain; background-color: transparent; padding-left: 2rem; padding-right: 2rem; height: 3rem;">
-          <span class="z-10 text-lg">Submit</span>
-        </button>
-      </form>
-    </div>
-    <!-- Image -->
-    <div class="hidden md:block">
-      <img src="images/Contact.png" alt="Manufacturing Process"
-        class="rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-pink">
-    </div>
-  </section>
+  <section class="about-color">
+    <div class="max-w-6xl mx-auto py-14 px-6 space-y-12">
+      <!-- Contact Form Section -->
+      <section class="our-trust--card-color p-8 rounded-lg shadow-lg grid md:grid-cols-2 gap-8 items-center">
+        <!-- Form -->
+        <div>
+          <h2 class="md:text-3xl font-Saira mb-6">Get in Touch with Us
+            <!-- Decorative Line -->
+            <img src="images/Line 3.png" alt="Decorative Line"
+              class="mb-4 w-24 ml-2 sm:w-60 h-auto transition-transform duration-300 hover:scale-110 mx-auto md:mx-0">
+          </h2>
+          <form class="space-y-6">
+            <input type="text" placeholder="First Name"
+              class="w-full bg-transparent border border-gray-500 text-gray-300 px-4 py-3 rounded-lg focus:ring-2 focus:ring-pink-500 focus:outline-none placeholder-gray-400 hover:border-pink" />
+            <input type="text" placeholder="Last Name"
+              class="w-full bg-transparent border border-gray-500 text-gray-300 px-4 py-3 rounded-lg focus:ring-2 focus:ring-pink-500 focus:outline-none placeholder-gray-400 hover:border-pink" />
+            <input type="email" placeholder="Email"
+              class="w-full bg-transparent border border-gray-500 text-gray-300 px-4 py-3 rounded-lg focus:ring-2 focus:ring-pink-500 focus:outline-none placeholder-gray-400 hover:border-pink" />
+            <textarea placeholder="Message"
+              class="w-full h-24 bg-transparent border border-gray-500 text-gray-300 px-4 py-3 rounded-lg focus:ring-2 focus:ring-pink-500 focus:outline-none resize-none placeholder-gray-400 hover:border-pink"></textarea>
+            <button type="submit"
+              class="relative px-6 py-3 text-white font-medium rounded-lg flex items-center justify-center space-x-4 transition-transform duration-300 hover:scale-105 hover:bg-pink"
+              style="background: url('images/Contact-Border.png') no-repeat center; background-size: contain; background-color: transparent; padding-left: 2rem; padding-right: 2rem; height: 3rem;">
+              <span class="z-10 text-lg">Submit</span>
+            </button>
+          </form>
+        </div>
+        <!-- Image -->
+        <div class="hidden md:block">
+          <img src="images/Contact.png" alt="Manufacturing Process"
+            class="rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-pink">
+        </div>
+      </section>
 
-  <!-- Map Section -->
-  <section>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0192064095014!2d-122.41941528435004!3d37.77492967975998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064d0f1fd85%3A0x5b7a4c7d4c77d01e!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1637600666698!5m2!1sen!2sus"
-      width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-      class="rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-pink"></iframe>
-  </section>
+      <!-- Map Section -->
+      <section>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0192064095014!2d-122.41941528435004!3d37.77492967975998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064d0f1fd85%3A0x5b7a4c7d4c77d01e!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1637600666698!5m2!1sen!2sus"
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+          class="rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-pink"></iframe>
+      </section>
 
-  <!-- Address Section -->
-  <section class="grid md:grid-cols-3 gap-8 pb-2">
-    <div
-      class="p-6 rounded-lg text-center border border-gray-500 border-b-0 transition-transform duration-300 hover:scale-105 hover:border-pink hover:text-pink">
-      <h4 class="text-xl font-Jost mt-2 mb-2">Our Address</h4>
-      <p class="text-gray-400 font-Jost">
-        Beech Smart Solutions Pvt. Ltd.<br>
-        B-220, SNS Atria, Opp. Jolly Party Plot,<br>
-        Vesu, Surat, Gujarat, India.
-      </p>
-    </div>
-    <div
-      class="p-6 rounded-lg text-center border border-gray-500 border-b-0 transition-transform duration-300 hover:scale-105 hover:border-pink hover:text-pink">
-      <h4 class="text-xl font-Jost mb-2">Plant - 1</h4>
-      <p class="text-gray-400 font-Jost">
-        175/176, Old GIDC<br>
-        Katargam, Surat-395105 (India)
-      </p>
-    </div>
-    <div
-      class="p-6 rounded-lg text-center border border-gray-500 border-b-0 transition-transform duration-300 hover:scale-105 hover:border-pink hover:text-pink">
-      <h4 class="text-xl font-Jost mb-2">Plant - 2</h4>
-      <p class="text-gray-400 font-Jost">
-        40/1, Old GIDC<br>
-        Katargam, Surat-395105 (India)
-      </p>
+      <!-- Address Section -->
+      <section class="grid md:grid-cols-3 gap-8 pb-2">
+        <div
+          class="p-6 rounded-lg text-center border border-gray-500 border-b-0 transition-transform duration-300 hover:scale-105 hover:border-pink hover:text-pink">
+          <h4 class="text-xl font-Jost mt-2 mb-2">Our Address</h4>
+          <p class="text-gray-400 font-Jost">
+            Beech Smart Solutions Pvt. Ltd.<br>
+            B-220, SNS Atria, Opp. Jolly Party Plot,<br>
+            Vesu, Surat, Gujarat, India.
+          </p>
+        </div>
+        <div
+          class="p-6 rounded-lg text-center border border-gray-500 border-b-0 transition-transform duration-300 hover:scale-105 hover:border-pink hover:text-pink">
+          <h4 class="text-xl font-Jost mb-2">Plant - 1</h4>
+          <p class="text-gray-400 font-Jost">
+            175/176, Old GIDC<br>
+            Katargam, Surat-395105 (India)
+          </p>
+        </div>
+        <div
+          class="p-6 rounded-lg text-center border border-gray-500 border-b-0 transition-transform duration-300 hover:scale-105 hover:border-pink hover:text-pink">
+          <h4 class="text-xl font-Jost mb-2">Plant - 2</h4>
+          <p class="text-gray-400 font-Jost">
+            40/1, Old GIDC<br>
+            Katargam, Surat-395105 (India)
+          </p>
+        </div>
+      </section>
     </div>
   </section>
-</div>
 
 
 
   <!-- Footer Section -->
-  <div>
-    <img src="./images/footermb.png" alt="" class="visible md:hidden">
-  </div>
-  <footer class="bg-gradient-to-br from-brand-purple to-indigo-950 text-white hidden md:flex ">
+  <footer class="footer-color text-white">
     <div class="container mx-auto px-6 py-12">
-      <!-- Main Footer Content -->
+      <!-- Footer Main Content -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
         <!-- Company Info -->
         <div class="space-y-6">
@@ -253,13 +253,12 @@
               </svg>
             </a>
           </div>
-        </div>
 
+
+        </div>
         <!-- Quick Links -->
         <div>
-          <h3 class="text-xl font-semibold mb-4 relative inline-block">
-            Quick Links
-            <!-- Decorative Line -->
+          <h3 class="text-lg font-semibold mb-4">Quick Links
             <img src="images/Footer-line.png" alt="Decorative Line"
               class="w-32 mt-1 sm:w-28 h-auto transition-transform duration-300 hover:scale-110">
           </h3>
@@ -273,8 +272,7 @@
             <li><a href="#" class="text-gray-300 hover:text-pink transition-colors">Contact Us</a></li>
           </ul>
         </div>
-
-        <!-- Contact Us -->
+        <!-- Contact Info -->
         <div>
           <h3 class="text-xl font-semibold mb-4 relative inline-block">
             Contact Us
@@ -313,20 +311,27 @@
             </li>
           </ul>
         </div>
+
+      </div>
+      <!-- Footer Bottom -->
+      <div class="border-t border-gray-700 pt-6">
+        <div class="flex justify-between items-center text-xs text-gray-400">
+          <div class="text-left">
+            <a href="#" class="hover:text-brand-pink transition-colors">
+              © 2024 by Global Glam
+            </a>
+          </div>
+          <div class="flex gap-4">
+            <a href="#" class="hover:text-brand-pink transition-colors">FAQ</a>
+            <span class="text-gray-500">|</span>
+            <a href="#" class="hover:text-brand-pink transition-colors">Shipping and Returns</a>
+            <span class="text-gray-500">|</span>
+            <a href="#" class="hover:text-brand-pink transition-colors">Terms and Conditions</a>
+          </div>
+        </div>
       </div>
 
-      <!-- Bottom Footer -->
-      <div class="w-auto border-t border-gray-700 text-gray-400 flex justify-between items-center p-2">
-        <div class="text-xs">
-          <a href="#" class="hover:text-brand-pink transition-colors">© 2023 by Global Glam</a>
-        </div>
-        <div class="flex gap-2">
-          <a href="#" class="hover:text-brand-pink transition-colors text-xs">FAQ</a>
-          <a href="#" class="hover:text-brand-pink transition-colors text-xs">Shipping and Returns</a>
-          <a href="#" class="hover:text-brand-pink transition-colors text-xs">Terms and Conditions</a>
-        </div>
-      </div>
-
+      
     </div>
   </footer>
 
